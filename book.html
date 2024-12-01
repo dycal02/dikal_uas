@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kbawetan</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.99RprVNWef0Eg3k2NFdQxQHaEK%26pid%3DApi&f=1&ipt=7065fa51b921f57ad82f6678081f04b507478dc6b57227b73cc3370994e5d669&ipo=images') no-repeat center center/cover;
+        }
+
+        .hero-section {
+            position: relative;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-section .content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .btn-primary {
+            background-color: #0250a3;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        .relative {
+            position: relative;
+        }
+
+        .blur {
+            backdrop-filter: blur(5px);
+            padding: 4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overlay"> </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Kbawetan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tes.html">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="detail.html">Facilities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="container mt-0 w-50 blur rounded">
+            <h2 class="text-center mb-4">Data diri pelanggan</h2>
+            <form class="relative">
+                <div class="mb-2">
+                    <label for="exampleInputEmail1" class="form-label">Nama Lengkap</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Masukkan nama Lengkap">
+                    <div class="mb-2 mt-3">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email addres/No Telp</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-described
+                                by="EmailAdress" placeholder="Masukkan Email/No telp">
+                            <div class="row mt-3">
+                                <div class="col">
+                                    <label for="exampleInputPassword1" class="form-label">Tanggal Check-in</label>
+                                    <input type="datetime-local" class="form-control" id="exampleInputPassword1"
+                                        placeholder="Tanggal check in">
+                                </div>
+                                <div class="col">
+                                    <label for="exampleInputPassword1" class="form-label">Tanggal Check-out</label>
+                                    <input type="datetime-local" class="form-control" id="exampleInputPassword1"
+                                        placeholder="Tanggal checl out">
+                                </div>
+                                </row>
+                            </div>
+                            <div class="mb-3 mt-3">
+                                <label for="exampleInputEmail1" class="form-label">Banyak Orang</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <a href="order.html" type="submit" class="btn btn-primary mt-5" >Buat Pesanan
+                                </a>
+            </form>
+        </div>
+
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
